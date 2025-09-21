@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas con Alertas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Mi Lista de Tareas</h1>
+            <p class="subtitle">Organiza tu día de forma eficiente</p>
+        </div>
+
+        <div class="input-group">
+            <input type="text" id="tarea-input" placeholder="Escribe una nueva tarea...">
+            <button id="agregar-btn">Agregar</button>
+        </div>
+
+        <div class="filters">
+            <button class="filter-btn active" data-filter="todas">Todas</button>
+            <button class="filter-btn" data-filter="pendientes">Pendientes</button>
+            <button class="filter-btn" data-filter="completadas">Completadas</button>
+        </div>
+
+        <ul id="lista-tareas">
+            <li class="vacio">No hay tareas. ¡Agrega alguna!</li>
+        </ul>
+
+        <div class="stats">
+            <span id="total-tareas">Total: 0 tareas</span>
+            <span id="completadas-tareas">Completadas: 0</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
